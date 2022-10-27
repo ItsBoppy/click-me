@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius:40px ;
+  background: #3e8e41;
+font-weight: bold;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#container
+{
+    text-align: center;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid red;
+}
+
+.button1:hover {
+  background-color: red;
+  color: white;
+}
+
+
+
+</style>
+</head>
+<div id="container">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <button class="button button1" onclick="audio.play();">Do not click</button></a>
+    
+</div>
+<script type="text/javascript">
+    const audio = new Audio();
+    audio.src = "./click.mp3";
+</script>
+
+
+
+</body>
+</html>
+
